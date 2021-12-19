@@ -1,0 +1,72 @@
+<!-- A CONTINUACION SE PRESENTA BUENAS PRACTICAS QUE SE LLAMAN  "SEMANTICA DE HTML" -->
+
+<!-- Esta linea indica al navegador que se va usar protocolo HTML. y es un tipo de etiqueta que no necesita otra de cierre, [estas se autocierran] -->
+<!DOCTYPE html>
+<!-- contenedor padre es el "html". -->
+<!-- la etiqueta "lang" indica el lenguaje que se va manejar en el navegador -->
+<html lang="en">
+<!-- dentro de "<head></head>" va ir todo lo que necesita cargar el navegador, pero no es visual para el usuario como las liberias externas, fuentes, etc -->
+<head>
+    <!-- las etiquetas META se cierran solas y son los parametros que se le dan al navegador para que funcione -->
+    <!-- la etiqueta charset="utf-8", es para indicarle al navegador que se usaran caracteres especiales como acentos, dieresis, emojis,y otros caracteres del lenguaje latinoamericano  -->
+    <meta charset="UTF-8"/>
+    <!-- la etiqueta NAME es para hacer SEO a la pagina para los buscadores y son las pequenas descripciones que salen en los resultados de buesqueda -->
+    <meta name="description" content="esta pagina es para prueba"/>
+    <!-- Etiquetas para el posicionamiento de paginas de los robots de los buscadores y nos hagan seguimiento por internet-->
+    <meta name="robots" content="index,follow"/>
+    <!--  es el titulo de la pestana -->
+    <title>Primera PAG</title>
+    <!-- etiqueta para que los proyectos sean responsive, es decir que sean compatibles en todos los dispositivos. Esto permite que se escalen los textos e imagenes automaticamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Etiquetas para agregar CSS -->
+    <link rel="stylesheet" href="./css/style.css" >
+</head>
+<body>
+    <!-- Etiquetas Contenedoras, deben llevar otras etiquetas por dentro, que es lo que estructura la pagina web -->
+    <!-- Se comienza con el header, por lo general se usa para tener un navegador -->
+    <header>
+        <nav></nav>
+    </header>
+    <!-- es todo el contenido principal que se desplegara en la pagina -->
+    <main>
+        <!-- Esta etiqueta divide en secciones la pagina y estas contienen articulos -->
+        <section>
+            <!-- se pueden tener una seccion con varios articulos -->
+            <article>
+
+            </article>
+        </section>
+        <!-- etiquetas de listas -->
+        <!-- Lista Desordenada (unordered list) y es para generar contenido por medio del tag li-->
+        <ul>
+            <li>Soy una manzana</li>
+        </ul>
+        <!-- Lista Ordenada (ordered list)-->
+        <ol>
+            <li>Elemento ordenado por defecto por navegador</li>
+        </ol>
+    </main>
+    <!-- este es la parte final de la pagina, no es obligatorio ya que existen paginas "infinitas" como FB que nunca encontraras un footer -->
+    <footer>
+
+    </footer>
+    <!-- etiqueta de texto -->
+    <p>Soy un texto</p>
+    <!-- Etiqueta de encabezados van del 1 al 6, entre mayor sea el numero, mas pequeno es el tamano de letra-->
+    <h1>Soy un Título H1</h1>
+    <h2>Título H2</h2>
+    <h3>Título H3</h3>
+    <h4>Título H4</h4>
+    <h5>Título H5</h5>
+    <h6>Título H6</h6>
+    <!-- Etiqueta de Ancla o de contenido-->
+    <!-- Se necesita el "#" en href para que no recargue la pagina -->
+    <a href="#">Soy un link cualquiera que no lleva a ningun lado</a>
+    <p></p>
+    <!-- sin una direccion o "#" en href, este hace peticion de recarga de pagina -->
+    <a href="">Soy un link que hace F5</a>
+
+
+
+</body>
+</html>

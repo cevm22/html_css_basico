@@ -1,26 +1,58 @@
-<!-- Esta linea indica al navegador que se va usar protocolo HTML. y es un tipo de etiqueta que no necesita otra de cierre, [estas se autocierran] -->
 <!DOCTYPE html>
-<!-- contenedor padre es el "html". -->
-<!-- la etiqueta "lang" indica el lenguaje que se va manejar en el navegador -->
 <html lang="en">
-<!-- dentro de "<head></head>" va ir todo lo que necesita cargar el navegador, pero no es visual para el usuario como las liberias externas, fuentes, etc -->
 <head>
-    <!-- las etiquetas META se cierran solas y son los parametros que se le dan al navegador para que funcione -->
-    <!-- la etiqueta charset="utf-8", es para indicarle al navegador que se usaran caracteres especiales como acentos, dieresis, emojis,y otros caracteres del lenguaje latinoamericano  -->
-    <meta charset="UTF-8"/>
-    <!-- la etiqueta NAME es para hacer SEO a la pagina para los buscadores y son las pequenas descripciones que salen en los resultados de buesqueda -->
-    <meta name="description" content="esta pagina es para prueba"/>
-    <!-- Etiquetas para el posicionamiento de paginas de los robots de los buscadores y nos hagan seguimiento por internet-->
-    <meta name="robots" content="index,follow"/>
-    <!--  es el titulo de la pestana -->
-    <title>Document</title>
-    <!-- etiqueta para que los proyectos sean responsive, es decir que sean compatibles en todos los dispositivos. Esto permite que se escalen los textos e imagenes automaticamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Etiquetas para agregar CSS -->
-    <link rel="stylesheet" href="./css/style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Reto 1 de HTML y CSS definitivo - Lista de compras"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 1 - Lista de compras</title>
 </head>
 <body>
-    
+    <header> 
+        <h1>Reto 1 - Crear lista de compras con Semántica HTML</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Lista de compras de supermercado</h2>
+            <article>
+                <ul>
+                    <li>Frutas</li>
+                    <ol>
+                        <li>Manzana</li>
+                        <li>Platano</li>
+                        <li>Fresa</li>
+                    </ol>
+                    <li>Carnes</li>
+                    <ol>
+                        <li>Pollo</li>
+                        <li>Carne Res</li>
+                        <li>Puerco</li>
+                    </ol>
+                    <li>Verduras</li>
+                    <ol>
+                        <li>Zanahoria</li>
+                        <li>Cebolla</li>
+                        <li>Tomatillo</li>
+                    </ol>
+                    <li>Tiendas para comprar online</li>
+                    <ol>
+                        <li>
+                            <!-- se coloca target="_blank" para que se abra una nueva pestana -->
+                            <!-- se debe colocar "http://" para redireccionar a una web externa -->
+                            <a href="http://www.soriana.com" target="_blank">Soriana</a>
+                        </li>
+                        <li>
+                            <a href="http://www.walmart.com" target="_blank">Walmart</a>
+                        </li>
+                    </ol>
+                    
+                </ul>
+                <footer>
+                    <p>Hecho por el curso definitivo de HTML y CSS de Platzi.</p>
+                </footer>
+            </article>
+        </section>
+    </main>
 
 </body>
 </html>
