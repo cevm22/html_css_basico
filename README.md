@@ -14,7 +14,6 @@ SVG - Lossless - Imágenes que se puede modificar su tamaño y no perder calidad
 Tamaño recomendado máximo en una imágen para un sitio web es de **70 kb**
 
 
-
 **Links**
 - https://www.flaticon.com/ - sitio para acceder a paquetes de iconos gratuitos
 - https://svgporn.com/ - sitio para obtener logos de empresas en SVG
