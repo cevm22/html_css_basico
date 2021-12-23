@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML etiqueta VIDEO</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Video en una sola linea de codigo SIN opciones alternas a reproduccion</h2>
+            <!-- Etiqueta reproduccion de 1 solo video -->
+            <video src="./vid_example.mp4" controls preload="auto" width="600" ></video>
+            <h2>Video con 2 fuentes de reproduccion</h2>
+            <!-- Es recomendable que se utilicen varios formatos, ya que no todos los navegadores pueden reproducir todos los formato de video, por lo que en lugar de ponerlo dentro de la etiqueta <VIDEO>, se pasan todas las opciones en distitnas etiquetas <SOURCE> -->
+                <video controls preload="auto" width="500">
+                    <!-- El servidor da estas opciones y el navegador toma la opcion que primero encuentre y esta la pueda reproducir.  -->
+                    <source src="./vid_example.m4v">
+                    <!-- en este caso reproduce el MP4 porque no se encuentra algun video con formato m4v -->
+                    <source src="./vid_example.mp4">  
+                    <p>En caso de no se pueda reproducir ningun video, aparece este TEXTO como advertencia final</p>                  
+                </video>
+        </section>
+        <section>
+            <h2>Video con autoreproduccion NO RECOMENDADO, es penalizado por los navegadores</h2>
+            <!-- el loop se utiliza si se quiere reproducir infinitas veces cuando el video se termine -->
+            <video controls preload="auto" autoplay width="500" loop> 
+                <source src="./vid_example.mp4">
+            </video>
+            <h2>Aqui se muestra una imagen previo a su reproduccion</h2>
+            <video src="./vid_example.mp4" controls preload="auto" width="500"  poster="./imgexample.png">
+            </video>
+        </section>
+        <section>
+            <h2>Video de Youtube u otra plataforma de video que admita esta opcion</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RLWcYADoV84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+</html>
