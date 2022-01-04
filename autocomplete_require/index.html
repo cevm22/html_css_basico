@@ -10,6 +10,8 @@
     <main>
         <section>
             <form action="">
+                <span><h1>Autocompletar, requerimientos y ComboBox/DragDown con etiquetas Select </h1></span>
+                <span><h2>Autocmplete y required</h2></span>
                 <label for="nombre">
                     <span>Nombre</span>
                     <!-- Se utiliza el Requiered, como primer filtro en el frontend para que el usuario NO deje pendientes datos a completar -->
@@ -28,8 +30,36 @@
                     <span>cp</span>
                     <input type="number" name="cp" id="cp" required autocomplete="postal-code">
                 </label>
+                <p></p>
+                <!-- etiquetas Select y option -->
+                <span><h2>Etiquetas Select y Option</h2></span>
+                <p></p>
+                <span>Lista combobox con "SELECT" -></span>
+                <!-- Etiqueta "SELECT" se utiliza para una lista de opciones en donde el usuario necesita navegar hasta encontrar el valor deseado. NO recomendado para listas muy largas -->
+                <!-- el id toma el valor que el usuario seleccione en el combobox de acuerdo a la etiqueta "option" en el parametro "value"-->
+                <select name="cursos" id="">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Python">Python</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="HTML">HTML</option>
+                </select>
+
+                <p></p>
+                <!-- Este metodo de combobox/dragdown permite el usuario escribir para hacer un filtro màs rapido, pero no es recomendado ya que presentan muchos bugs, solo para cuando sean listas muy largas -->
+                <span>Lista combobox con "INPUT y DATALIST" -></span>
+                <input list="lista">
+                <datalist id="lista">
+                    <option value="WEB3"></option>
+                    <option value="WEB2"></option>
+                    <option value="MongoDB"></option>
+                    <option value="SQL"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Js y html"></option>
+                </datalist>
                 <input type="submit">
             </form>
+
         </section>
     </main>
 </body>
