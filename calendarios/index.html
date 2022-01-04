@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reto 1 de HTML y CSS definitivo - Calendarios"/>
+    <title>Calendarios</title>
+</head>
+<body>
+    <header> <h1> Tipos de solicitud de información de fecha y horario</h1></header>
+    <main>
+        <section>
+            <h2>Calendario Compacto</h2>
+            <!-- Debe de colocarse dentro de una etiqueta formulario -->
+            <form action="">
+                <label for="calendario_simple">
+                    <span>Calendario con tiempo Local del cliente</span>
+                    <input type="datetime-local" name="calendario_simple" id="calendario_simple">
+                </label>
+                <!-- Etiqueta para agregar un boton de tipo submit/enviar -->
+                <input type="submit">
+                <!-- Improvisar espacio en html -->
+                <p></p>
+            </form>
+        </section>
+        <section>
+            <h2>Calendario Individual</h2>
+            <form action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <input type="time" name="hora" id="hora">
+                </label>
+                <label for="dia">
+                    <span>Dia</span>
+                    <input type="date" name="dia" id="dia">
+                </label>
+                <label for="weekday">
+                    <span>Semana</span>
+                    <input type="week" name="weekday" id="weekday">
+                </label>
+                <label for="month">
+                    <span>Mes</span>
+                    <input type="month" name="month" id="month">
+                </label>
+                <!-- La etiqueta Input envia todas las variables que se encuentran dentro de la etiqueta <form></form> -->
+                <input type="submit">                
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
