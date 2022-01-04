@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocompletar y requerimientos</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <!-- Se utiliza el Requiered, como primer filtro en el frontend para que el usuario NO deje pendientes datos a completar -->
+                    <!-- Se utiliza autocomplete, para apoyar al usuario en autocompletar los campos que normalmente suele utilizar en otros formularios en su navegador, esta informacion la obtiene del navegador del usuario -->
+                    <input type="text" name="nombre" id="nombre" required autocomplete="name">
+                </label>
+                <label for="correo">
+                    <span>Correo</span>
+                    <input type="email" name="correo" id="correo" required autocomplete="email">
+                </label>
+                <label for="pais">
+                    <span>Pais</span>
+                    <input type="text" name="pais" id="pais" required autocomplete="country-name">
+                </label>
+                <label for="cp">
+                    <span>cp</span>
+                    <input type="number" name="cp" id="cp" required autocomplete="postal-code">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
