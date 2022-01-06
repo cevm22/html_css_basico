@@ -1,0 +1,29 @@
+
+header{    
+    
+    background-attachment: fixed;
+    height: 30px;
+    color: white;
+    text-align: center;
+    background:  rgba(108, 158, 201, 0.5);  
+
+}
+body {
+    background-color: black;
+    background-image: url(/images/jt.jpg);
+    background-size: cover;    
+    background-attachment: fixed; 
+    
+}
+main {
+    background:  rgba(208,228,245,0.5);    
+}
+footer {
+    background-color: rgba(155, 52, 133, 0.5);
+    height: 20px;
+    text-align: center;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    
+}
