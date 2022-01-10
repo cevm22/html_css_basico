@@ -1,0 +1,65 @@
+body{
+    background: gray;
+    margin: 0; /*Elimina el margen externo*/
+}
+
+/* BLOQUE CONTENEDOR */
+.navbar {
+    background: green;
+    padding: 5px /*Se agrega un espacio para mostrar sobre modificadores*/
+    
+}
+/* Elemento del Bloque contenedor .navbar */
+.navbar__main{
+    list-style: none;  /*Quita el DEFAULT del punto de lista/bullet list */
+    margin-top: 10px; /*Espacio de pixeles tomando de referencia TOP*/
+    padding-left: 0px; /*Quitamos espacio de la izquierda*/    
+    margin-top: 0%; /* Eliminar el margen del bloque de la etiqueta UL en este caso*/
+    
+}
+
+.navbar__element{
+    display: inline-block; /* Los elementos de una lista se organizan HORIZONTAL */ 
+    
+}
+
+/* Se modifica el tag que se encuentre dentro de la clase en HTML, en este caso es <a> */
+.navbar__element a{
+    color: black;
+    /* text-decoration: none;  Quitar la decoracion de SUBRAYADO que tienen los URL */
+    font-weight: bold; /*Agregar el estado de BOLD/NEGRITA a la letra*/
+    padding: 10px; /* Agregar espacio entre elementos */
+    
+}
+
+/* Pseudo Clase - Cambia los elementos de un estado, es decir los estados cuando el cursor pasa sobre un boton o cuando se da click en un boton, ej: CLASE_ELEMENTO ETIQUETA:hover */
+.navbar__element a:hover{
+    color:rgb(41, 41, 124); 
+}
+
+.navbar__element a:active{
+    color:red; 
+}
+
+/* Pseudo Elemento - Cambia o modifica un elemento de HTML en esepcifico y va despues de "::", en este caso se agregan los caracteres " -- " despues de la etiqueta <a> 
+Ejemplo CLASE__ELEMENTO ETIQUETA::after */
+
+.navbar__element a::after{
+    content: " -- "
+}
+
+
+.texto{
+    color:rgb(132, 0, 255);
+}
+
+/* modificador para quitar el subrayado de los links  */
+.texto-modificador{
+    text-decoration: none; 
+}
+
+/* modificador para hacer texto negrita y mas grande */
+.texto-bold{
+    font-weight:bold;
+    font-size: 50px;
+}

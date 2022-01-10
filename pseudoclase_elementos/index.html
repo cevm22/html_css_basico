@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <!-- En este caso se sigue la metodologia BEM, el cual consiste en crear una clase principal -->
+        
+        <!-- BLOQUE contenedor -->
+        <nav class="navbar"> 
+            <!-- Elemento de bloque contenedor .navbar
+            todo lo que se encuentre dentro de esa etiqueta debera nombrarse despues de dos guiones bajos -->
+            <ul class="navbar__main">
+                <li class="navbar__element"><a href="">INICIO</a></li>
+                <li class="navbar__element"><a href="">BLOG</a></li>
+                <li class="navbar__element"><a href="">CONTACTO</a></li>
+                <!-- este caso no se puede manipular muy bien, ya que los elementos los esta usando la class "navbar__element" -->
+                <!-- y se agrega el modificador aparte dentro del tag <a> para quitar el subrayado del URL -->
+                <li class="navbar__element "><a href="" class="texto-modificador ">EXIT</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <!-- se pueden agregar distintos modificadores y estos deben ir con el nombre del bloque y como separacion lleva un guion medio ej: -->
+        <a href="" class="texto texto-modificador texto-bold"><p> Texto en Main</p></a>
+    </main>
+</body>
+</html>

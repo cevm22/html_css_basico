@@ -25,3 +25,4 @@ Tamaño recomendado máximo en una imágen para un sitio web es de **70 kb**
 - https://convertio.co/es/jpg-svg/ - Sitio para Convertir imágenes entre distintos formatos
 - http://getbem.com/introduction/ - Documentacion de metodologia BEM
 - https://9elements.com/bem-cheat-sheet/ - Sitio para revisar metodologia BEM de forma visual
+- https://medium.com/@juancaferraris/dise%C3%B1ando-formularios-m%C3%A1s-efectivos-estructura-inputs-labels-y-acciones-81ac011ea05f - Tips de diseño de formularios
