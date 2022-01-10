@@ -23,3 +23,5 @@ Tamaño recomendado máximo en una imágen para un sitio web es de **70 kb**
 - https://www.verexif.com/ - Sitio para eliminar la metadata de las imagenes
 - https://picresize.com/ - Sitio para reducir tamaño de imágenes
 - https://convertio.co/es/jpg-svg/ - Sitio para Convertir imágenes entre distintos formatos
+- http://getbem.com/introduction/ - Documentacion de metodologia BEM
+- https://9elements.com/bem-cheat-sheet/ - Sitio para revisar metodologia BEM de forma visual
