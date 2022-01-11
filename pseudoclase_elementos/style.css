@@ -1,3 +1,12 @@
+/* para hacer reset a todas las etiquetas con border y margin a 0 se usa el sig codigo: */
+/* RECOMENDABLE usar una hoja de estilos  para "normalizar" los proyectos*/
+/* En este caso es el archivo "normalize.css" */
+* {
+    box-sizing: border-box; /*ajusta todo el contenido en cualquier resolucion pantalla*/
+    padding: 0; /*Elimina padding en todos los elementos*/
+    margin: 0; /*Elimina margin en todos los elementos*/
+}
+
 body{
     background: gray;
     margin: 0; /*Elimina el margen externo*/

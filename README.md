@@ -26,3 +26,6 @@ Tamaño recomendado máximo en una imágen para un sitio web es de **70 kb**
 - http://getbem.com/introduction/ - Documentacion de metodologia BEM
 - https://9elements.com/bem-cheat-sheet/ - Sitio para revisar metodologia BEM de forma visual
 - https://medium.com/@juancaferraris/dise%C3%B1ando-formularios-m%C3%A1s-efectivos-estructura-inputs-labels-y-acciones-81ac011ea05f - Tips de diseño de formularios
+- https://necolas.github.io/normalize.css/ - Hoja Estilos para Normalizar proyectos en todos los navegadores, es recomendable utilizarlo en lugar de modificar entornos globales en hoja de estilos.
+- https://htmlcheatsheet.com/css/ - Web interactiva para obtener codigo de CSS
+- https://cssreference.io/ - Web interactiva para CSS
