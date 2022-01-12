@@ -1,0 +1,29 @@
+
+
+body{
+    background-color: gray;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+    color: white
+    
+}
+
+
+
+
+h1{
+    color: green;
+    
+}
+h2{
+    color:initial;
+}
+
+h3{
+    color:blue;
+}
+
+a{
+    color:unset;
+}
