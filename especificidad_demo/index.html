@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Especificidad</title>
+</head>
+<body>
+    <header class="page-header">
+        <h1 id="page-title" class="title">Titulo de pagina</h1>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Clase</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a class="modificar" href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Caso del "Titulo de la pagina". En esta situacion se coloca en el CSS un estilo de letra y tamaño en la etiqueta H1 , pero, como este elemento contiene el id="page-title", el navegador le da prioridad a los estilos que contengan este ID el cual también se usa un estilo y tamaño de letra DISTINTO al tag H1. </p>
+    </main>
+</body>
+</html>
