@@ -51,3 +51,7 @@ h1{
 #main-nav .modificar{
     background-color: orange;
 }
+
+/* ES RECOMENDABLE SOLO UTILIZAR CLASES Y ETIQUETAS PARA CREAR ARCHIVOS CSS */
+/* MALAS PRACTICAS, inyeccion de style en HTML y uso del !important. Uso execisvo de IDs*/
+/* BUENAS PRACTICAS, Uso de clase o varias clases, tags junto con clases, pseudoelementos y tratar de evitar el uso de ID # */

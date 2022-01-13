@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Combinadores</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Combinadores adyacentes / Adjacent Siblings (operador "+") </h1>
+            <h2>tag de titulo H2</h2>
+            <p>Aplica cambio porque me encuntro después de la etiqueta H2</p>
+            <h2>tag titulo H2</h2>
+            <h3>tag titulo H3</h3>
+            <p>NO cambia, porque me encuentro después de etiqueta H3</p>
+            <h2>tag titulo H2</h2>
+            <p>Aplica cambio porque me encuntro después de la etiqueta H2</p>
+        </div>
+        <div>
+            <h1>Combinadores Hermano General / General Sibling (operador "~")</h1>
+            <p>Tag hermano P y me encuentro al mismo nivel que una etiqueta H4; NO aplica cambio antes de una etiqueta h4</p>
+            <h2>Tag H2</h2>
+            <h4>Tag H4. Despues de esta etiqueta, se aplican los cambios a las etiquetas hermanas P </h4>
+            <h3>Tag H3</h3>
+            <p>Tag hermano P, Aplica cambio porque estoy después y al mismo nivel que la etiqueta H4</p>
+            <p>Tag hermano P</p>
+            <h4>Tag h4</h4>
+            <p>Tag hermano P</p>
+        </div>
+        <section class="hijos">
+            <h1>Combinadores Hijos</h1>
+            <div>
+                <p>Aqui plica el estilo de tag de texto P</p>
+            </div>
+            <p>NO aplica estilo, porque no hay un tag padre DIV</p>
+            <h4>Titulo H4</h4>
+        </section>
+        <section class="descendientes">
+            <h1>Combinadores Descendientes</h1>
+            <div>
+                <p> Texto etiqueta primer hijo</p>
+                <div>
+                    <p>Texto etiqueta segundo hijo</p>
+                    <div>
+                        <p>texto etiqueta tercer hijo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

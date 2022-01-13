@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: grey;
+}
+h1{
+    border-style: dashed;
+    border-color: rgb(5, 215, 252);
+    border-width: 2px;
+}
+/* Los combinadores sirven para ser más especificos con el navegador en el documento de estilos, así aumenta al especificidad */
+
+/* COMBINADORES ADYACENTES / ADJACENT SIBLINGS (+) */
+/* Este indica que aplique el estilo al elemento siguiente que cumpla la condicion*/
+
+/* Aqui se cambia el color a la etiqueta <p> que se encuentre después de la etiqueta <h2> con el operador "+" */
+h2 + p{
+    color:white;
+}
+/* COMBINADORES HERMANO GENERAL / GENERAL SIBLING Operador (~)*/
+/* Aqui cambia color de las etiquetas "hermanas <p>" que se encuentran después y al mismo nivel que la etiqueta <h4> */
+h4 ~ p{
+    color:yellow;
+}
+
+/* COMBINADORES HIJOS Operador (>)*/
+/* En este caso  aplica el cambio a las etiquetas hijos directos de <div> a los <p> (Se agrega la clase .hijos para poder hacer visible el ejemplo)*/
+.hijos div > p{
+    color: rgb(20, 238, 86);
+}
+
+/* COMBINADORES  DESCENDIENTES*/
+/* Aplica a todas las etiquetas que se encuentran dentro de la etiqueta padre a distintos niveles */
+
+.descendientes p{
+    color: darkorange;
+}
