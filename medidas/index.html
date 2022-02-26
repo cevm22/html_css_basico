@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- Ejemplo de medidas relativas y absolutas por PX y % -->
+        <div class="relativo_absoluto_sencillo">
+            <div>
+            <p>texto de 16 px, y este texto siempre sera del mismo tamaño sin importar las dimensiones del navegador y puede generar scroll en caso de que no sea utilizado correctamente</p>
+            </div>
+        </div>
+        <!-- medidas 'EM'  -->
+        <section class="text_container">
+            <p class="comentarios">
+                Las medidas relativas EM trabajan como multiplicadores de acuerdo a la medida inmediata que tenga el padre directo.
+            </p>
+        <p>texto antes del div. aqui se agrega 1.5em, lo cual indica que se va multiplicar el fontsize del body de 20px por 1.5 dando total de 30px</p>
+        <div>
+            <p>texto dentro del div, aqui se agrega otro multiplicador de 1.5em, lo cual multiplicaria los 20px del body por 1.5em mas otros 1.5em de la etiqueta div, dando un total de 45 px</p>
+        </div>
+        </section>
+        <!-- Medidas con  'REM' -->
+        <section class="rem_class">
+            <p class="comentarios"> Las medidas relativas REM (root element) trabajan de acuerdo a los estilos que tengan las etiquetas root, en este caso el texto antes del div tiene 3rem por lo que se multiplica de acuerdo al estilo de la etiqueta html y el texto dentro div tiene 5rem y se multiplica igual por lo que tenga el estilo de la etiqueta html; Adicional a esto, es recomendable utilizar el estilo en html font-size: 62.5%; para que las medidas en rem sean mas faciles de calculor, es decir, con esta configuracion en html, si necesito 16 pixeles deberia utilizar 1.6rem.
+            </p>
+            <p>Texto antes del div</p>
+            <div class="rem_class_in_div">
+                <p>Texto dentro div</p>
+            </div>
+            <p>Texto despues del div</p>
+        </section>
+        <!-- Medidas min/max height and width with viewports vw/vh -->
+        <section class="viewports">
+            <p class="comentarios">En esta seccion se pone en ejemplo las medidas de objetos min/max height and width y los viewports. Aqui se toma en cuenta dos divs, el cual el primero con fondo morado actua como si fuese el fondo de una seccion, body, main, div, etc y se manipula con los viewports
+                En donde estos indican valores en % de la vista del usuario, mientras que los min/max height and width indican los limites de los objetos, siempre y cuando teniendo en cuenta que no vaya a suceder un overflow como se puede apreciar el div de color rojo sobrepasa el div de color morado.
+                overflow = Se refiere cuando los objetos dentro de otros se sobredimensionan y se ven encimados.
+            </p>            
+            <!-- viewports -->
+            <div class="vp_div">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid eligendi culpa animi, deleniti magni reprehenderit nemo laborum recusandae quaerat cum impedit architecto non nulla ut sapiente! Esse, ducimus itaque.
+                    Inventore quibusdam fugit qui itaque voluptas sapiente expedita repudiandae sequi, tempore, ex, fuga blanditiis illo officia. Rerum laborum temporibus, maxime mollitia consectetur excepturi ipsa ipsum earum, consequatur quia quae exercitationem.
+                    Consequatur, ducimus tempore nisi ex praesentium quidem natus dolores saepe vel minima architecto, voluptatem hic amet ipsam, facere debitis quas distinctio suscipit libero vero nihil ratione aliquid culpa? Fuga, ducimus!
+                    Delectus eius, magnam praesentium asperiores reprehenderit vero nihil obcaecati. Voluptatibus expedita consectetur laborum quos ad! Quos, enim doloremque voluptatem unde nobis, quibusdam explicabo consectetur, assumenda totam reprehenderit labore odit sapiente?
+                    Enim, illum cumque? Eius ducimus, culpa, tempora distinctio, eligendi expedita recusandae fugit unde voluptatem voluptatum repellat rerum illo numquam sunt! Natus facere voluptatum soluta doloremque earum vel harum dicta aliquid?
+                    Perferendis quam quas ducimus quisquam esse, obcaecati aspernatur dolores minima laborum id error quis tempore atque corporis recusandae explicabo cum doloremque quae aut sed totam a autem consequuntur in! Consectetur.
+                    Reiciendis fugit laudantium eum nemo itaque molestiae dolores laborum harum ipsam officiis, possimus, modi, tenetur tempore. Alias minima eligendi, maiores laboriosam delectus laudantium rem placeat ab! Voluptate sit quae quas.
+                    Minima, asperiores explicabo velit fuga iste assumenda eligendi molestiae hic, beatae ab iusto debitis commodi rem voluptatum nihil voluptate at minus impedit, dolorum voluptatibus et? Nam voluptatibus repellendus fuga! Illum?</p>
+                </div>                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

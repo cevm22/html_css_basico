@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{   
+    background-color: gray;
+    font-size: 20px;
+}
+.comentarios{
+    font-size: 14px;
+    border-style: double;
+    border-color: white;
+}
+.relativo_absoluto_sencillo div {
+    background-color: darkorange;
+    width: 50%; /*El procentaje es medida relativa y esto hace que el navegador se ajuste de acuerdo al dispositivo*/
+    height: 100%;
+}
+
+.relativo_absoluto_sencillo p {
+    border-style: dashed;
+    font-size: 26px; /* medida absoluta, esto no se ajusta a los dispositivos, y puede generar scrolls, lo cual es mala practica*/    
+}
+
+/* Estilos para medidas EM. (element)
+Este trabaja como multiplicadores, el cual toma las variables o medidas del padre inmediato, por lo que si se hacen anidaciones
+se multiplica varias veces.
+*/
+
+
+.text_container{
+    border-style: dashed;
+    border-color: brown;
+    border-width: 0.5rem;
+    font-size: 1.5em;
+}
+
+.text_container div{
+    font-size: 1.5em;
+}
+
+/* Estilos para medidas en el uso de REM (root element)
+Toma el estilo que tenga el Root, es decir toma la referencia de la etiqueta HTML en caso de que no haya ningun estilo que alteren sus estiquetas padres
+ */
+
+ .rem_class{
+     border-style: dashed;
+     border-color: blue;
+     border-width: 0.5rem;
+     font-size: 3rem;
+     padding-bottom: 1.6rem;
+ }
+
+ .rem_class_in_div p{
+     font-size: 5rem;
+ }
+
+ /* Estilos max/min width, viewport height (vh) y viewport width (vw) 
+ - Los viewport se refieren al porcentaje que el usuario puede ver en su pantalla, normalmente se utilizan para etiquetas como section, main u otras que se necesiten para disenar las secciones de tu frontend
+ - Los estilos max/min width define el ancho maximo y minimo del elemento, menos las filas y grupos de tablas
+ - los estilos max/min height define la altura maxima y minimo del elemento, menos las columnas y grupos de tablas
+ */
+
+ .viewports {
+     width: 80vw;
+     height: 80vh;
+     background-color: darkmagenta;
+     padding: 2rem;
+ }
+
+ /* cuando se utilice un width max/min se debe tener un porcentaje base */
+ .vp_div div{
+     font-size: 3rem;
+     background-color: brown;
+     border-style: dashed;
+     width: 80%; /*porcentaje base*/
+     min-width: 1000px; /*minimo ancho que se ajustara el div*/
+     max-width: 1200px; /*max ancho que se ajustara el div*/
+     /* height: 500px; *//*con este estilo es para dar fijo la altura del div, pero hay riesgo del overflow o superposicion de los objetos*/ 
+     min-height: 500px; /*para solucionar tipos de overflows o superposicion de objetos, se establece un min-height/max-height en donde indica que si hay un objeto que sea mas grande que el limite seleccionado, este se va ajustar hasta el tamano del objeto que sobrepase la altura */
+     margin:0 auto; /*aqui indica que no se quiere margin en top y bot (con el 0), pero, que se ajuste en derecha e izquierda*/
+ }
