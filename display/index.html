@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- Display tipo block, estos se extienden por todo el documento, las etiquetas div y p por default utilizan este estado -->
+        <p class="comentarios">Display tipo block, estos se extienden por todo el documento, las etiquetas div y p por default utilizan este estado.</p>
+        <div class="block-element">etiqueta div inicial</div>
+        <p class="block-element">texto etiqueta P</p>
+        <!-- lista por etiquetas p -->
+        <div>
+            <p>texto</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+        </div>
+        <!-- Los tipo display inline se ajustan de acuerdo al size que estos contengan y son flexibles, por lo que se pueden poner varios size hermanas consecuentemente hasta terminar el documento y despues lo pasa a la siguiente fila. PERO, no pueden utilizar padding ni margin-->
+        <p class="comentarios">Los tipo display inline se ajustan de acuerdo al size que estos contengan y son flexibles, por lo que se pueden poner varios size hermanas consecuentemente hasta terminar el documento y despues lo pasa a la siguiente fila. PERO, no pueden utilizar padding ni margin</p>
+        <span>etiqueta span</span>
+        <span>etiqueta span 2 2 </span>
+        <!-- Aqui convertimos la lista desordenada en tipo inline-block, en donde se extiende hasta donde lo necesita y se puede modificar padding y margin sin problemas -->
+        <p class="comentarios">Aqui convertimos la lista desordenada en tipo inline-block, en donde se extiende hasta donde lo necesita y se puede modificar padding y margin sin problemas</p>
+        <ul class="nav">
+            <li>HOME</li>
+            <li>CURSOS</li>
+            <li>CONTACTO</li>
+            <li>SALIR</li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Avenir Next,Muli,sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+    background-color: gray;   
+}
+
+/* nav */
+nav{
+    position: relative;
+    background-color: black;
+}
+nav div{
+    display: inline-block;
+    align-items: center;
+}
+.navegacion li{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navegacion{
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}
+
+.logo img{
+    width: 10rem;
+    height: 5.8rem;
+}
+
+/* lateral */
+.lateral{
+    position: absolute;
+    top: 5.8rem;
+    width: 15%;
+    bottom: 5%;
+    background-color: #1c2f50;
+}
+
+img{
+    width: 100%;
+}
+
+.axie_list{
+    align-items: center;
+}
+
+.axie_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.axie_list li{
+    list-style: none;
+    display: flex;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+/* container */
+.container{
+    position: absolute;
+    display: flex;
+    background-color: chocolate;
+    background-image: url("https://1703140995-files.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-LocuLeNcXinpTOZxNu0%2F-MKQ7ueQMwE1Nn5oSPiA%2F-MKQ8tpDfKtUlAq2_69b%2FHQ%20Banner.png?alt=media&token=55cea856-b239-497a-bac9-3ddfdd33ce62");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* height: 100%; */
+    width: 85%;
+    right: 0;
+    top: 5.8rem;
+    bottom: 5%;
+}
+
+/*  VS */
+
+.cards{
+    margin: auto;
+    height: 50rem;
+    width: 50rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}  
+
+.box{
+    height: 40rem;
+    width: 40rem;
+    background-color: #242735;
+    position: relative;
+    border-radius: 5rem;
+    opacity: 95%;
+}
+
+.imagen_top{
+    position: relative;
+    right: 15rem;
+    bottom: 10rem;
+}
+
+.imagen_bot{
+    position: relative;
+    left: 15rem;
+    bottom: 10rem;
+}
+
+
+.mirror{
+    -webkit-transform: scaleX(-1);
+}
+.text{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: white;
+}
+
+.id_name_box_top{
+    position: absolute;
+    /* background-color: aquamarine; */
+    height: 15rem;
+    width: 15rem;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.id_name_box_bot{
+    position: absolute;
+    /* background-color: aquamarine; */
+    height: 15rem;
+    width: 15rem;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.vs{
+    font-size: 14rem;
+    color: #be3637;
+    position: absolute;
+    display: center;
+    right: 10rem;
+    top: 12rem;
+
+}
+
+/* footer */
+footer{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: black;
+    height: 5%;
+}
+
+.texto{
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 40%;
+    
+}
