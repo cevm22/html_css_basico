@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Avenir Next,Muli,sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://1703140995-files.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-LocuLeNcXinpTOZxNu0%2F-MKQ7ueQMwE1Nn5oSPiA%2F-MKQ8tpDfKtUlAq2_69b%2FHQ%20Banner.png?alt=media&token=55cea856-b239-497a-bac9-3ddfdd33ce62");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cards{
+    margin: auto;
+    height: 50rem;
+    width: 50rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}   
+
+.box{
+    height: 40rem;
+    width: 40rem;
+    background-color: #242735;
+    position: relative;
+    border-radius: 5rem;
+    opacity: 95%;
+}
+
+.imagen_top{
+    position: relative;
+    right: 15rem;
+    bottom: 10rem;
+}
+
+.imagen_bot{
+    position: relative;
+    left: 15rem;
+    bottom: 5rem;
+}
+
+img{
+    width: 90%;
+    opacity: 100%;
+    
+}
+.mirror{
+    -webkit-transform: scaleX(-1);
+}
+.text{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: white;
+}
+
+/* Position
+static - viene por default en css y no se puede afectar por pisiciones como top, left, right y bot
+Absolute - el objeto toma las dimensiones de acuerdo al documento, como si no tuviese un padre. puede modificarse su positicon por top,left,right y bot
+Relative - el objeto toma las dimesiones de acuerdo al padre como referencia. y puede modificarse su posicion
+Sticky - Funciona como relativo, pero cuando se hace scroll, se queda fijo y recorre por todo el documento
+*/
+/* En este ejercicio se va usar el absolute para hacer una sola etiqueta */
+.id_name_box_top{
+    position: absolute;
+    /* background-color: aquamarine; */
+    height: 15rem;
+    width: 15rem;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.id_name_box_bot{
+    position: absolute;
+    /* background-color: aquamarine; */
+    height: 15rem;
+    width: 15rem;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.vs{
+    font-size: 14rem;
+    color: #be3637;
+    position: absolute;
+    display: center;
+    right: 10rem;
+    top: 12rem;
+
+}
