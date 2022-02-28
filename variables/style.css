@@ -5,18 +5,20 @@
 --primary-color:#003476;
 --secondary-color:#b4d2f7;
 --header-size: 4rem;
---font: 1.8rem;
+--font: 3rem;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Avenir Next,Muli,sans-serif;
+
 }
 html{
     font-size: 62.5%;
     background-color: gray;   
+    /* se agrega el fontsize desde google fonts, previamente agregado en el html con LINK */
+    font-family: 'BhuTuka Expanded One', cursive;
 }
 
 header{
