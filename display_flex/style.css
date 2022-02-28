@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Avenir Next,Muli,sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+    background-color: gray;   
+}
+body{
+    font-size: 1.6rem;
+}
+.separacion{
+    border: 0.5rem solid white;
+    padding: 1rem;
+}
+/* Display Flex
+Hace que todos los hijos sean flexibles y puedan coexistir uno frente al otro, por lo que se manipulan siempre se deben acomodar desde el padre. En este caso
+es el '.container' */
+
+/* Estos ejemplos es para acomodo horizontal de los elementos */
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    /* flex-direction: column;
+        cambia la direccion del acomodo de los hijos a manera de columna */
+
+    /* Flex-wrap: wrap, nowrap, wrap-reverse*/
+    /* wrap: Hace que los hijos se acomoden a una nueva fila. siempre al 100% del viewpoint del navegador y no se reajustan, evitando scroll horizontal*/
+    /* wrap-reverse: Lo mismo que el wrap, pero  los elementos los reacomoda hacia arriba*/
+    /* nowrap (default navegador): evita que se reajusten y hace que los elementos se reajusten con forme se haga crezca o disminuya el viewpoint    */
+    flex-wrap:wrap ;
+    /* Justify-content: center, flex-start, flex-end */
+    /* Center: Centra los hijos en todo el espacio en horizontal*/
+    /* flex-end: El contenido es cargado a la derecha */
+    /* flex-start (default navegador): cargado a la izquierda */
+    /* space-around: genera un espacio entre elementos, tratando de que sea equitativo, pero el sobrante lo deja a los laterales*/
+    /* space-evenly: lo mismo que el around, pero el espacio es equitativo en todos los laterales de los elementos */
+    justify-content: space-evenly; 
+
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: blueviolet;
+}
+.box3{
+    background-color: burlywood;
+}
+.box4{
+    background-color: cadetblue;
+}
+.box5{
+    background-color: coral;
+}
+.box6{
+    background-color: green;
+}
+
+/* Ejemplos para acomodos verticales de elementos */
+
+
+.container_v{
+    border: 0.3rem solid black;
+    display: flex;
+    /* height: 50vh; */
+
+    /* align-items flex-end, flex-start, stretch, baseline, center, 
+    es para aliminear elementos de manera vertical */
+    /* para que funcione debe haber espacio en vertical, haciendo responsive la pagina. */
+    /* flex-end, flex-start: hace lo mismo que con justify-content, pero en manera vertical */
+    /* stretch: Esto funciona cuando NO ESTA definido el tamano del elemento, y estira los elementos al 100% del contenedor padre */
+    /* baseline: Esto funciona cuando NO ESTA definido el tamano del elemento, y recorta los elementos hasta la altura de su contenido*/
+    /* center:  alinea los elementos siempre de manera vertical en el centro*/
+    /* align-items: baseline; */
+
+    flex-wrap: wrap;
+
+}
+
+.box_v{
+    /* width: 10rem; */
+    height: 10rem;
+    /* flex-basis: 1rem 
+    le da al elemento una base de medida minima a lo ancho, agregando el [flex-grow:1] estos rellenan el espacio y si agregamos [flex-wrap:wrap] al padre,
+    los contenedores empiezan a bajar 1 por 1 y al mismo tiempo rellenan el espacio en la segunda fila
+    */
+
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+/* MODIFICACION DE ELEMENTOS CUANDO EL PADRE TIENE "display: flex" */
+
+/* order: 1,2,3,n
+A los elementos se les puede agregar un "order" con flexbox para que estos se acomoden hacia la izquierda.
+IMPORTANTE, si a un objeto no se le indica un order, este inmediatamente se posiciona a la izquierda de acuerdo al orden de colocacion de las etiquietas HTML.
+lo cual es importante tener en cuenta ya que puedes obtener resultados diferentes a los esperados */
+
+/* flex-grow: 1;
+los elementos empiezan a rellenar el espacio que hay en la fila cuando va creciendo, pero en el caso contrario, pierden la propiedad de rellenar espacios cuando
+se va recortando el espacio entre ellos
+*/
+.box1_v{
+    background-color: blue;
+}
+.box2_v{
+    background-color: blueviolet;
+}
+.box3_v{
+    background-color: burlywood;
+}
+.box4_v{
+    background-color: cadetblue;
+
+}
+.box5_v{
+    background-color: coral;
+}
+.box6_v{
+    background-color: green;
+}
