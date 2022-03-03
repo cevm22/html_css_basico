@@ -20,8 +20,14 @@
         <picture>
             <source media="(min-width: 1100px )" srcset="./large.jpg">
             <source media="(min-width: 850px)" srcset="./medium.jpg">
-            <img src="./small.jpg" alt="Small image">
+                <!--  Recomendacion para accesibilidad con responsive, es tener en cuenta en los textos usar medidas con REM en lugar de pixeles, ya que los pixeles son
+                    medidas absolutas y estas no se modifican con los navegadores que tienen editados para hacerlos mas accesibles a mas personas -->
+
+            <!-- se agrega titulo a la imagen y se explica lo que hace ALT y TITLE -->
+            <img src="./small.jpg" alt="Descripcion en caso de que la imagen se corrompa" title="Titulo de imagen cuando se hace hover en la imagen">
         </picture>
+
+    
     </main>
 </body>
 </html>
