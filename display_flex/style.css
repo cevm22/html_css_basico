@@ -74,7 +74,7 @@ es el '.container' */
     /* height: 50vh; */
 
     /* align-items flex-end, flex-start, stretch, baseline, center, 
-    es para aliminear elementos de manera vertical */
+    es para alinear elementos de manera vertical */
     /* para que funcione debe haber espacio en vertical, haciendo responsive la pagina. */
     /* flex-end, flex-start: hace lo mismo que con justify-content, pero en manera vertical */
     /* stretch: Esto funciona cuando NO ESTA definido el tamano del elemento, y estira los elementos al 100% del contenedor padre */

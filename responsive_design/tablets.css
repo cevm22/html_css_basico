@@ -1,0 +1,6 @@
+/* Celular mas chico es de 320px */
+@media (min-width:600px){
+    .c2,.c3,.c4{
+        width: 48%;
+    }
+}
