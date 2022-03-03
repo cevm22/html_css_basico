@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <!-- La mejor manera para hacer imagenes responsive de distintos mediaqueries es de la siguiente forma:
+
+            - Debe colocarse etiqueta PICTURE como contenedor de imagen.
+            - Se deben colocar las otras imagenes fuente de distintas dimensiones con el orden de arriba a abajo como de la mas grande a la mas chica.
+            - Utilizar en CSS la propiedad WIDTH: 100%, ya que esta se ajusta al contenedor padre y se manipula más fácil.
+            - Finalmente se utiliza la etiqueta IMG con la imagen mas chica como src principal, esto para diseñar MOBILE FIRST.
+            -->
+        <picture>
+            <source media="(min-width: 1100px )" srcset="./large.jpg">
+            <source media="(min-width: 850px)" srcset="./medium.jpg">
+            <img src="./small.jpg" alt="Small image">
+        </picture>
+    </main>
+</body>
+</html>
