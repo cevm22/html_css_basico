@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+    background-color: gray;   
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.c1{
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+}
+
+.c2{
+    background-color: green;
+    height: 100px;
+    width: 100%;
+
+}
+
+.c3{
+    background-color: coral;
+    height: 100px;
+    width: 100%;
+
+}
+
+.c4{
+    background-color: crimson;
+    height: 100px;
+    width: 100%;
+
+}
+
+.c5{
+    background-color: gainsboro;
+    height: 100px;
+    width: 100%;
+
+}
+.c6{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+
+}
+
+@media (min-width: 600px){
+    .c1{
+        width: 30%;
+        order: 1;
+    }
+    .c2{
+        width: 70%;
+        order: 2;
+    }
+    .c3{
+        width: 50%;
+        order: 3;
+    }
+    .c4{
+        width: 50%;
+        order: 4;
+    }
+    .c5{
+        width: 100%;
+        order: 5;
+    }
+    .c6{
+        width: 100%;
+        order: 6;
+    }
+}
+
+@media (min-width: 800px){
+    .c1{
+        width: 30%;
+    }
+    .c2{
+        width: 70%;
+    }
+    .c3{
+        width: 30%;
+    }
+    .c4{
+        width: 70%;
+    }
+    .c5{
+        width: 50%;
+    }
+    .c6{
+        width: 50%;
+    }
+}
